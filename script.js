@@ -27,33 +27,41 @@
       "deg);}to{transform:rotate(" +
       (hour + 360) +
       "deg)}}",
+
   ].join("");
 
 document
   .querySelector("#clock-animate")
   .innerHTML = animation;
+  // adding animation array to style element
+  
 })();
 
 document
-.body.style.cssText =
+.body
+.style
+.cssText =
   "  display: flex;justify-content: center;align-items: center;min-height: 100vh;background-color: #00a2ff;";
 
 
 
 document
 .querySelector(".clock")
-.style.cssText =
+.style
+.cssText =
   "  position: relative;display: flex;align-items: center;justify-content: center;width: 250px;height: 250px;background-color: #e9fcfc;border: 16px solid #303030;border-radius: 50%;";
 
 document
 .querySelector(".center-nut")
-.style.cssText =
+.style
+.cssText =
   " position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); height: 15px;width: 15px;background-color: #262626;z-index: 2;border-radius: 50%;";
 
 document
 
 .querySelector(".center-nut2")
-.style.cssText =
+.style
+.cssText =
   " position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%); height: 9px;width: 9px;background-color: #f00;z-index: 6;border-radius: 50%;";
 
 
@@ -61,33 +69,41 @@ document
 const elements = document.
         querySelectorAll(".indicator div");
 
-elements.forEach((element, index) => {
+elements
+.forEach((element, index) => {
 
   if ((index + 1) % 3 === 0) {
     
-    element.style.cssText =
+    element
+    .style
+    .cssText =
       "position: absolute; width: 2px; height: 5px; background-color: #F00;";
   } 
   else
    {
-    element.style.cssText =
+    element
+    .style
+    .cssText =
       "position: absolute; width: 2px; height: 5px; background-color: #404040;";
   }
 });
 
 document
 .querySelector(".sec-hand")
-.style.cssText =
+.style
+.cssText =
   "  position: absolute;height: 1px;width: 1px;z-index: 5;animation: sec-hand 60s linear infinite;";
 
 document
 .querySelector(".min-hand")
-.style.cssText =
+.style
+.cssText =
   "    position: absolute;height: 1px;width: 1px;z-index: 4;animation: min-hand 3600s linear infinite;";
 
 document
 .querySelector(".hr-hand")
-.style.cssText =
-  "   position: absolute;height: 1px;width: 1px;z-index: 3;animation: hr-hand 43200s linear infinite;";
+.style
+.cssText =
+  "  position: absolute;height: 1px;width: 1px;z-index: 3;animation: hr-hand 43200s linear infinite;";
 
 
