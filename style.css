@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.clock::before {
+  content: "";
+  position: absolute;
+  width: 259px;
+  height: 259px;
+  border: 6px solid #202020;
+  border-radius: 50%;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+}
+.clock::after {
+  content: "";
+  position: absolute;
+  height: 150px;
+  width: 150px;
+  background: #59c3ff;
+  border-radius: 50%;
+  z-index: 1;
+}
+.indicator div:nth-child(1) {
+  transform: rotate(30deg) translateY(-113px);
+}
+.indicator div:nth-child(2) {
+  transform: rotate(60deg) translateY(-113px);
+}
+.indicator div:nth-child(3) {
+  transform: rotate(90deg) translateY(-113px);
+}
+.indicator div:nth-child(4) {
+  transform: rotate(120deg) translateY(-113px);
+}
+.indicator div:nth-child(5) {
+  transform: rotate(150deg) translateY(-113px);
+}
+.indicator div:nth-child(6) {
+  transform: rotate(180deg) translateY(-113px);
+}
+.indicator div:nth-child(7) {
+  transform: rotate(210deg) translateY(-113px);
+}
+.indicator div:nth-child(8) {
+  transform: rotate(240deg) translateY(-113px);
+}
+.indicator div:nth-child(9) {
+  transform: rotate(270deg) translateY(-113px);
+}
+.indicator div:nth-child(10) {
+  transform: rotate(300deg) translateY(-113px);
+}
+.indicator div:nth-child(11) {
+  transform: rotate(330deg) translateY(-113px);
+}
+.indicator div:nth-child(12) {
+  transform: rotate(360deg) translateY(-113px);
+}
+.sec-hand::before {
+  content: "";
+  position: absolute;
+  height: 130px;
+  width: 3px;
+  left: -1px;
+  top: -25px;
+  background-color: #f00;
+  border-radius: 3px;
+}
+.sec-hand::after {
+  content: "";
+  position: absolute;
+  height: 45px;
+  width: 7px;
+  left: -3px;
+  top: -55px;
+  background-color: #f00;
+  border-radius: 3px;
+}
+.min-hand::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  left: -3px;
+  top: -95px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 70px solid #303030;
+}
+.min-hand::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 3px;
+  left: -3px;
+  top: -25px;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-top: 25px solid #303030;
+}
+.hr-hand::before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  left: -3px;
+  top: -75px;
+  border-left: 3px solid transparent;
+  border-right: 3px solid transparent;
+  border-bottom: 55px solid #303030;
+}
+.hr-hand::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 3px;
+  left: -3px;
+  top: -20px;
+  border-left: 2px solid transparent;
+  border-right: 2px solid transparent;
+  border-top: 20px solid #303030;
+}
